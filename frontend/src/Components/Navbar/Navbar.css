@@ -1,0 +1,126 @@
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   width: 65%;
+   padding: 10px;
+ }
+ 
+ .nav-logo p {
+   color: #171717;
+   font-size: 32px;
+   font-weight: bold;
+ }
+ 
+ .nav-menu {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   gap: 20px;
+}
+
+.nav-menu li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+ 
+ .nav-menu a {
+   color: #171717;
+   font-size: 18px;
+ }
+ 
+ .nav-menu-visible {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 60px; 
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   z-index: 1;
+ }
+ 
+ .nav-login-cart {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ 
+ .nav-login-cart img {
+   width: 25px;
+   height: 25px;
+ }
+ 
+ .nav-login-cart .logout-icon {
+   cursor: pointer;
+ }
+ 
+ .nav-cart-count {
+   width: 20px;
+   height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -26px;
+   margin-left: -35px;
+   border-radius: 11px;
+   font-size: 14px;
+   background: rgb(0, 0, 0);
+   color: white;
+ }
+ 
+ .nav-dropdown {
+   display: none;
+ }
+ 
+ @media (max-width: 800px) {
+   .navbar {
+      margin-top: 0;
+      padding: 5px;
+      position: relative;
+      width: 100%;
+   }
+   .nav-logo {
+     order: 2;
+     margin-bottom: 10px;
+   }
+   .nav-dropdown {
+     display: block;
+     width: 30px;
+     transition: 0.5s;
+     z-index: 1;
+     order: 1;
+   }
+   .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      list-style: none;
+      gap: 20px;
+      position: absolute;
+      left: 0;
+      flex-direction: column;
+      background-color: #fff;
+      z-index: 1;
+      display: none;
+   }
+   
+   .nav-menu li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+   }
+   .nav-menu-visible {
+      display: flex;
+   }
+   .nav-login-cart {
+     order: 3;
+   }
+ }
+ 

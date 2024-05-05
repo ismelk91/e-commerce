@@ -1,0 +1,33 @@
+.breadcrum {
+    width: 65%;
+    margin: 10px auto;
+    color: #5e5e5e;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+@media(max-width: 1280px) {
+    .breadcrum {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .breadcrum {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 800px) {
+    .breadcrum {
+        width: 95%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 500px) {
+    .breadcrum {
+        font-size: 10px;
+    }
+}
